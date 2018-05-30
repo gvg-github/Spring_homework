@@ -15,4 +15,6 @@ public interface Camera {
 
     boolean isBroken();
 
+    void ready();
+
 }
