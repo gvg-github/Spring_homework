@@ -1,4 +1,4 @@
-package ru.gvg.spring;
+package ru.gvg.spring.example_from_manual;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

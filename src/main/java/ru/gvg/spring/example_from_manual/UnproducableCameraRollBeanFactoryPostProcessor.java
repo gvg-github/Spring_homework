@@ -1,15 +1,16 @@
-package ru.gvg.spring;
+package ru.gvg.spring.example_from_manual;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.stereotype.Component;
+import ru.gvg.spring.example_from_manual.UnproducableCameraRoll;
 
 /**
  * Created by Valeriy on 30.05.2018.
  */
-@Component
+//@Component
 public class UnproducableCameraRollBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         // Получаем имена всех BeanDefinition для доступа к каждому из них

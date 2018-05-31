@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by Valeriy on 30.05.2018.
  */
-//@Component("cameraRoll")
+@Component("cameraRoll")
 public class ColorCameraRoll implements CameraRoll {
     public void processing() {
         // TODO Auto-generated method stub
