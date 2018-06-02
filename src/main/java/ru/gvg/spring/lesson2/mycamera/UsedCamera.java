@@ -1,4 +1,4 @@
-package ru.gvg.spring.mycamera;
+package ru.gvg.spring.lesson2.mycamera;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

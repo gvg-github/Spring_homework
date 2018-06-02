@@ -1,9 +1,9 @@
-package ru.gvg.spring.mycamera;
+package ru.gvg.spring.lesson2.mycamera;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
-import ru.gvg.spring.Camera;
+import ru.gvg.spring.lesson2.component.Camera;
 
 /**
  * Created by Valeriy on 30.05.2018.

@@ -1,21 +1,22 @@
-package ru.gvg.spring.mycamera;
+package ru.gvg.spring.lesson2.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-import ru.gvg.spring.Camera;
-import ru.gvg.spring.CameraRoll;
+import ru.gvg.spring.lesson2.mycamera.UsedCamera;
+import ru.gvg.spring.lesson2.mycamera.UsedCameraImpl;
 
 import javax.annotation.PostConstruct;
 
 /**
  * Created by Valeriy on 30.05.2018.
  */
-//@Component("camera")
-//@Scope("prototype")
-public class UsedCameraImpl implements Camera {
+@Component("camera")
+@Scope("prototype")
+@UsedCamera(usingUsedCameraClass = UsedCameraImpl.class)
+public class CameraImpl implements Camera {
 
     @Autowired
     @Qualifier("cameraRoll")
@@ -41,7 +42,6 @@ public class UsedCameraImpl implements Camera {
             return;
         } else {
             System.out.println("Сделана фотография!");
-            System.out.println("Фотография некачественная!");
             cameraRoll.processing();
         }
     }

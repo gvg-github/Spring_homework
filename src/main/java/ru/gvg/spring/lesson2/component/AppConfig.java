@@ -1,4 +1,4 @@
-package ru.gvg.spring;
+package ru.gvg.spring.lesson2.component;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

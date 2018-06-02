@@ -1,4 +1,4 @@
-package ru.gvg.spring.mycamera;
+package ru.gvg.spring.lesson2.mycamera;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;

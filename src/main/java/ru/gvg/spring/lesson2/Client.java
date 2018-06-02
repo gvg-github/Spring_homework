@@ -1,7 +1,9 @@
-package ru.gvg.spring;
+package ru.gvg.spring.lesson2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ru.gvg.spring.lesson2.component.AppConfig;
+import ru.gvg.spring.lesson2.component.Camera;
 
 /**
  * Created by Valeriy on 30.05.2018.
