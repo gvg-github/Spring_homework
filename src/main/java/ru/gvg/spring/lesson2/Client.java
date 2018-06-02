@@ -2,7 +2,7 @@ package ru.gvg.spring.lesson2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.gvg.spring.lesson2.component.AppConfig;
+import ru.gvg.spring.lesson2.component.AppConfigLesson2;
 import ru.gvg.spring.lesson2.component.Camera;
 
 /**
@@ -10,7 +10,7 @@ import ru.gvg.spring.lesson2.component.Camera;
  */
 public class Client{
     public static void main(String[] args) {
-        ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
+        ApplicationContext context=new AnnotationConfigApplicationContext(AppConfigLesson2.class);
         Camera camera = context.getBean("camera",Camera.class);
         camera.breaking();
         camera.doPhotograph();
